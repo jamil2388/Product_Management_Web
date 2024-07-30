@@ -17,6 +17,9 @@ npm install -D typescript @types/node @types/express ts-node-dev
 npm install cors
 npm install --save-dev @types/cors
 
+# to handle session
+npm install express-session
+
 npm start
 ```
 
@@ -26,6 +29,9 @@ npm start
 cd frontend
 
 npm install axios
+
+npm install react-router-dom
+npm install @types/react-router-dom
 
 npm start
 ```

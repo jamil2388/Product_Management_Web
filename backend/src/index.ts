@@ -51,7 +51,7 @@ app.post('/login', (req: Request, res: Response) => {
   if (user) {
     // @ts-ignore
     req.session.user = { username: user.username };
-    res.json({ user: { username: user.username } });
+    res.json({ user: { username: user.username, products: user.products } });
   } else {
     res.status(401).json({ message: 'Invalid credentials' });
   }
@@ -99,8 +99,14 @@ app.post('/signup', (req: Request, res: Response) => {
     return res.status(400).json({ message: 'User already exists' });
   }
 
+  const newUser = {
+    username,
+    password,
+    products: []  // Initialize products as an empty array
+  };
+
   // Add new user to the list
-  users.push({ username, password });
+  users.push(newUser);
   writeUsers(users);
   
   res.status(201).json({ message: 'User created successfully' });

@@ -176,5 +176,25 @@
     "username": "tu6",
     "password": "123",
     "products": []
+  },
+  {
+    "username": "su1",
+    "password": "123",
+    "products": []
+  },
+  {
+    "username": "du2",
+    "password": "123",
+    "products": []
+  },
+  {
+    "username": "su2",
+    "password": "123",
+    "products": []
+  },
+  {
+    "username": "su5",
+    "password": "123",
+    "products": []
   }
 ]

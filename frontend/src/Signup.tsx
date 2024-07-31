@@ -30,7 +30,7 @@ const Signup: React.FC<SignupProps> = ({ setUsername }) => {
   };
 
   return (
-    <div className="container" style={{ backgroundColor: '#081226' }}>
+    <div className="container" style={{ backgroundColor: '#1e2445' }}>
       <div className="row justify-content-center mt-5">
         <div className="col-md-4">
           <h2 className="text-center display-4 mb-4">Sign Up</h2>

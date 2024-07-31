@@ -38,6 +38,8 @@ npm install axios
 npm install react-router-dom
 npm install @types/react-router-dom
 
+npm install bootstrap
+
 npm start
 ```
 

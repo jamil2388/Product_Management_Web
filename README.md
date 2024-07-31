@@ -19,6 +19,11 @@ npm install --save-dev @types/cors
 
 # to handle session
 npm install express-session
+npm install --save-dev @types/express-session
+
+# handle secured session
+npm install dotenv
+npm install --save-dev @types/dotenv
 
 npm start
 ```

@@ -1,14 +1,21 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-const Welcome: React.FC = () => {
-  const location = useLocation();
-  const { username } = location.state as { username: string };
+interface WelcomeProps {
+  username: string | null;
+}
+
+const Welcome: React.FC<WelcomeProps> = ({ username }) => {
+  const navigate = useNavigate();
+
+  if (!username) {
+    navigate('/');
+    return null;
+  }
 
   return (
     <div>
-      <h3>Username: {username}</h3>
-      <h1>Welcome to the Product Management Interface</h1>
+      <h1>Welcome, {username}!</h1>
     </div>
   );
 };
